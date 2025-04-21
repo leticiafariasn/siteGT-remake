@@ -1,72 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
+
 <body class="bg-gray-100 min-h-screen">
 
-    <!-- Controle de estado -->
-    <input type="checkbox" id="menu-toggle" class="peer hidden">
+  <!-- Controle de estado -->
+  <input type="checkbox" id="menu-toggle" class="peer hidden">
 
-    <!-- Botão como label vinculado ao checkbox -->
-    <label for="menu-toggle" class="hamburguer-button" title="Abrir índice do curso">
-        <i class="ph-bold ph-list-bullets text-2xl ml-2"></i>
-        <span class="sr-only">Abrir índice do curso</span>
+  <!-- Botão como label vinculado ao checkbox -->
+  <label for="menu-toggle" class="hamburguer-button" title="Abrir índice do curso">
+    <i class="ph-bold ph-list-bullets text-2xl ml-2"></i>
+    <span class="sr-only">Abrir índice do curso</span>
+  </label>
+
+  <aside class="sidebar">
+    <!-- BOTÃO DE FECHAR dentro da sidebar -->
+    <label for="menu-toggle" class="close-button" title="Fechar índice do curso">
+      <i class="ph-bold ph-x text-xl"></i>
     </label>
 
-    <aside class="sidebar">
-        <!-- BOTÃO DE FECHAR dentro da sidebar -->
-        <label for="menu-toggle" class="close-button" title="Fechar índice do curso">
-            <i class="ph-bold ph-x text-xl"></i>
-          </label>
+    <!-- Adriana vai preencher aqui -->
+    <div class="sidebar-content" style="max-height: calc(100vh - 100px); overflow-y: auto;">
+      <details open>
+        <summary class="custom-summary bg-[#203969] text-white px-2 py-2 rounded-md">
+          <i class="ph-bold ph-greater-than arrow-icon"></i>
+          <span class="title">Boas vindas</span>
+        </summary>
+        <a class="course-index" href="#">É com muita alegria que damos início à sua jornada...</a>
+        <!-- Conteúdo virá aqui depois -->
+      </details>
 
-        <!-- Adriana vai preencher aqui -->
-        <div class="sidebar-content" style="max-height: calc(100vh - 100px); overflow-y: auto;">
-            <details open>
-              <summary class="custom-summary bg-[#203969] text-white px-2 py-2 rounded-md mb-2">
-                <i class="ph-bold ph-greater-than arrow-icon"></i>
-                <span class="title">Boas vindas</span>
-              </summary>
-              <!-- Conteúdo virá aqui depois -->
-            </details>
-          
-            <details>
-              <summary class="custom-summary text-gray-800 px-2.5 mb-2">
-                <i class="ph-bold ph-greater-than arrow-icon"></i>
-                <span class="title">CONTEÚDO COMPLEMENTAR</span>
-              </summary>
-              <!-- Conteúdo virá aqui depois -->
-            </details>
-          
-            <details>
-              <summary class="custom-summary text-gray-800 px-2.5 mb-2">
-                <i class="ph-bold ph-greater-than arrow-icon"></i>
-                <span class="title">TURMA ALDEOTA</span>
-              </summary>
-            </details>
-          
-            <details>
-              <summary class="custom-summary text-gray-800 px-2.5 mb-2">
-                <i class="ph-bold ph-greater-than arrow-icon"></i>
-                <span class="title">TURMA SUL</span>
-              </summary>
-            </details>
-          
-            <details>
-              <summary class="custom-summary text-gray-800 px-2.5 mb-2">
-                <i class="ph-bold ph-greater-than arrow-icon"></i>
-                <span class="title">TURMA BEZERRA</span>
-              </summary>
-            </details>
-          </div>
-          
-        </aside>
+      <details>
+        <summary class="custom-summary text-gray-800 px-2.5">
+          <i class="ph-bold ph-greater-than arrow-icon"></i>
+          <span class="title">CONTEÚDO COMPLEMENTAR</span>
+        </summary>
+        <a class="course-index" href="#">Unidade 1: Introdução ao Desenvolvimento Web 💻</a>
+        <a class="course-index" href="#">Esta é a nossa primeira unidade de conteúdo!Primei...</a>
+        <label class="flex items-center gap-2">
+          <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
+          <a class="topic-index" href="#">O que é Desenvolvimento Web?</a>
+        </label>
+        <a class="course-index" href="#">Unidade 2: HTML e CSS 💻</a>
+        <a class="course-index" href="#">Este é o nosso segundo conteúdo! Seus estudos leva...</a>
+        <label class="flex items-center gap-2">
+          <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
+          <a class="topic-index" href="#">Configuração e introdução ao HTML</a>
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
+          <a class="topic-index" href="#">Tags HTML e estrutura</a>
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
+          <a class="topic-index" href="#">Fundamentos do CSS</a>
+        </label>
+        <label class="flex items-center gap-2">
+        <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
+          <a class="topic-index" href="#">Propriedades de layout e Box Model</a>
+        </label>
+        <label class="flex items-center gap-2">
+        <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
+          <a class="topic-index" href="#">CSS Flexbox e suas propriedades</a>
+        </label>
+        <a class="course-index" href="#">Continuação Flexbox</a>
+        <a class="course-index" href="#">Unidade 3: Git e Github 💻</a>
+        <a class="course-index" href="#">Bem-vindos a mais um conteúdo! Vamos aprender sobr...</a>
+        <label class="flex items-center gap-2">
+          <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
+            <a class="topic-index" href="#">Git e Github</a>
+          </label>
+        <a class="course-index" href="#">Unidade 4: Bibliotecas para HTML e CSS 💻</a>
+        <a class="course-index" href="#">Vamos conhecer sobre o Bootstrap, uma das bibliote...</a>
+        <label class="flex items-center gap-2">
+          <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
+            <a class="topic-index" href="#">Bootstrap</a>
+          </label>
+          <details>
+          <summary class="custom-summary text-gray-800 px-2.5 modulo">
+            <i class="ph-bold ph-greater-than arrow-icon"></i>
+            <span class="title">Módulo 2 - Desenvolvimento Front-end - De 15.04 a 05.05.2025</span><i class="ph-fill ph-lock-simple"></i>
+          </summary>
+        </details>
+          <details>
+          <summary class="custom-summary text-gray-800 px-2.5 modulo">
+            <i class="ph-bold ph-greater-than arrow-icon"></i>
+            <span class="title">Módulo 3 - Back-end - De 06.05 a 01.06.2025</span><i class="ph-fill ph-lock-simple"></i>
+          </summary>
+        </details>
+          <details>
+          <summary class="custom-summary text-gray-800 px-2.5 modulo">
+            <i class="ph-bold ph-greater-than arrow-icon"></i>
+            <span class="title">Módulo 4 - Testes Automatizados - De 02.06 a 09.06.2025</span><i class="ph-fill ph-lock-simple"></i>
+          </summary>
+        </details>
+          <details>
+          <summary class="custom-summary text-gray-800 px-2.5 modulo">
+            <i class="ph-bold ph-greater-than arrow-icon"></i>
+            <span class="title">Exercícios de HTML e CSS</span>
+          </summary>
+          <label class="flex items-center gap-2 questionario">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
+            <a class="topic-modulo" href="#">Questionário 1</a>
+          </label>
+          <label class="flex items-center gap-2 questionario">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
+            <a class="topic-modulo" href="#">Questionário 2</a>
+          </label>
+        </details>
+      </details>
+
+      <details>
+        <summary class="custom-summary text-gray-800 px-2.5">
+          <i class="ph-bold ph-greater-than arrow-icon"></i>
+          <span class="title">TURMA ALDEOTA</span>
+        </summary>
+      </details>
+
+      <details>
+        <summary class="custom-summary text-gray-800 px-2.5">
+          <i class="ph-bold ph-greater-than arrow-icon"></i>
+          <span class="title">TURMA SUL</span>
+        </summary>
+      </details>
+
+      <details>
+        <summary class="custom-summary text-gray-800 px-2.5">
+          <i class="ph-bold ph-greater-than arrow-icon"></i>
+          <span class="title">TURMA BEZERRA</span>
+        </summary>
+      </details>
+    </div>
+
+  </aside>
 
 </body>
 
