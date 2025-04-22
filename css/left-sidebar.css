@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hamburguer-button {
+
+  border-radius: 200px;
+  background-color: #203969;
+  color: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-right: 14px;
+  padding-left: 10px;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+  padding: 1rem;
+  transition: transform 0.3s;
+  cursor: pointer;
+  position: fixed;
+  top: 120px;
+  left: -16px;
+  width: 60px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hamburguer-button:hover {
+  transform: translateX(0.75rem);
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  background-color: #f8f9fa;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease-in-out;
+  z-index: 998;
+}
+
+.peer:checked~.sidebar {
+  transform: translateX(0);
+}
+
+.close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-left: .5rem;
+  margin-bottom: 8px;
+}
+
+.close-button:active {
+  border: 2px solid #203969;
+  background-color: transparent;
+}
+
+.sidebar-content {
+  position: relative;
+  z-index: -1;
+  height: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow-y: auto;
+  padding: .4rem;
+  scrollbar-width: thin;
+  scrollbar-color: #6a737b #f8f9fa;
+}
+
+.sidebar {
+  position: fixed;
+  top: 108px; /* altura da .header-top (64px) + .second-nav (44px), ajuste conforme o seu layout */
+  height: calc(100vh - 108px); /* para ocupar o restante da tela */
+  z-index: 30;
+}
+
+details summary {
+  list-style: none;
+}
+
+.custom-summary {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.course-index {
+  white-space: nowrap;
+  /* impede quebra de linha */
+  overflow: hidden;
+  /* esconde o excesso de texto */
+  text-overflow: ellipsis;
+  max-width: 250px;
+  display: block;
+  margin-left: 24px;
+  padding: .5rem 0.3rem;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+}
+
+details .arrow-icon {
+  transition: transform 0s ease;
+  transform: scaleX(0.5);
+}
+
+details[open] .arrow-icon {
+  transform: rotate(90deg) scaleX(0.5);
+}
+
+summary.modulo .arrow-icon {
+  transition: transform 0.0s ease;
+  transform: scaleX(0.5);
+}
+
+details[open]>summary.modulo .arrow-icon {
+  transform: rotate(90deg) scaleX(0.5);
+}
+
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0;
+}
+
+.py-2 {
+  margin-bottom: 4px;
+}
+
+.gap-2 {
+  padding-left: .5rem;
+}
+
+.topic-index {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: .5rem 0;
+}
+
+.subtopic {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: .5rem 0;
+  margin-left: 2.6em;
+}
+
+.topic-modulo {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 .5rem;
+}
+
+.title-main {
+  padding: .5rem .5rem;
+}
+
+.modulo {
+  margin-left: 2em;
+  padding: .5rem .3rem;
+}
+
+.w-4 {
+  width: .8rem;
+}

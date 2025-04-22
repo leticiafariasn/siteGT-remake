@@ -1,0 +1,121 @@
+body {
+    width: 100%;
+    font-family:sans-serif;
+    background-color: #f4f4f4;
+    color: black;
+    margin: 10px 10px;
+  
+}
+
+
+
+#course-banner {
+    margin-top: 130px;
+    background-color: transparent;
+}
+
+main {
+    color: black;
+    border-radius: 10px 10px;
+    
+}
+
+.mt-10 {
+    margin-top: 0.5rem;
+}
+
+.max-w-5xl {
+    max-width: 75rem;
+}
+
+.container-main {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+.h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5em;
+    background: rgba(255, 255, 255, .5);
+    align-items: center;
+    text-align: center;
+}
+
+.text-center {
+    text-align: left;
+}
+
+.estrela{
+    margin:0;
+    padding-top:0%;
+    text-align: left;
+    
+}
+
+.ph-fill.ph-star:before {
+    color: #e69d00;
+    border-color: #554300;
+    border: 2px;
+    font-size: 16px;
+}
+.course-value {
+color: #b4690e;
+font-weight: 700;
+margin-left: 0.5rem !important;
+}
+
+.avaliar {
+    color: white;
+    cursor: pointer; 
+}
+
+.avaliar:hover {
+    transition: all 0.25s ease-out;
+    text-decoration: underline;
+    
+}
+
+
+.titulo{
+    text-align: left;
+    margin-left: 5%;
+    text-transform: capitalize;
+    color: #35379b;
+
+}
+header {
+  border-radius: 5px;
+}
+.texto {
+  text-align: left ;
+}
+/* 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #35379b;
+    text-decoration: none;
+} */
+
+
+footer {
+    background-color: #203969;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+}
