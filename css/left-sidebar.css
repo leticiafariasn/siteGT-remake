@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .hamburguer-button:hover {
@@ -80,6 +81,13 @@
   padding: .4rem;
   scrollbar-width: thin;
   scrollbar-color: #6a737b #f8f9fa;
+}
+
+.sidebar {
+  position: fixed;
+  top: 108px; /* altura da .header-top (64px) + .second-nav (44px), ajuste conforme o seu layout */
+  height: calc(100vh - 108px); /* para ocupar o restante da tela */
+  z-index: 30;
 }
 
 details summary {

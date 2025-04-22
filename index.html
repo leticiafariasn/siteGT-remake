@@ -9,10 +9,38 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
 </head>
+<header>
+  <div class="header-top">
+    <div class="first-nav">
+      <img class="imagem-geração" src="img/logo.png"">
+      <nav>
+          <ul>
+              <li><a href=" #home">Página Inicial</a></li>
+      <li><a href="#sobre">Painel</a></li>
+      <li><a href="#servicos">Meus Cursos</a></li>
+      </ul>
+      </nav>
+    </div>
+  
 
-<body class="bg-gray-100 min-h-screen">
+    <div class="second-nav">
+      <ul class="nav-lista">
+        <li><label class="nav-item ativo">Curso</label></li>
+        <li><label class="nav-item">Participantes</label></li>
+        <li><label class="nav-item">Notas</label></li>
+        <li><label class="nav-item">Competências</label></li>
+      </ul>
+    </div>
+</div>
+</header>
 
+<body class="bg-[#F2F3F7] min-h-screen">
+  <iframe class="iframe-sz-chat" scrolling="no"
+    src="https://digitalcollege2.sz.chat/webchat/v2/?cid=665de375669fb40017ae8a3e&amp;host=https%3A%2F%2Fdigitalcollege2.sz.chat&amp;locale=pt-BR"
+    allow="microphone" z-index: 2147483640;">
+  </iframe>
   <!-- Controle de estado -->
   <input type="checkbox" id="menu-toggle" class="peer hidden">
 
@@ -65,11 +93,11 @@
           <a class="topic-index" href="#">Fundamentos do CSS</a>
         </label>
         <label class="flex items-center gap-2">
-        <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
+          <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
           <a class="topic-index" href="#">Propriedades de layout e Box Model</a>
         </label>
         <label class="flex items-center gap-2">
-        <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
+          <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
           <a class="topic-index" href="#">CSS Flexbox e suas propriedades</a>
         </label>
         <a class="course-index" href="#">Continuação Flexbox</a>
@@ -77,33 +105,35 @@
         <a class="course-index" href="#">Bem-vindos a mais um conteúdo! Vamos aprender sobr...</a>
         <label class="flex items-center gap-2">
           <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
-            <a class="topic-index" href="#">Git e Github</a>
-          </label>
+          <a class="topic-index" href="#">Git e Github</a>
+        </label>
         <a class="course-index" href="#">Unidade 4: Bibliotecas para HTML e CSS 💻</a>
         <a class="course-index" href="#">Vamos conhecer sobre o Bootstrap, uma das bibliote...</a>
         <label class="flex items-center gap-2">
           <input type="radio" class="w-4 h-4 m-0 p-0 box-content">
-            <a class="topic-index" href="#">Bootstrap</a>
-          </label>
-          <details>
+          <a class="topic-index" href="#">Bootstrap</a>
+        </label>
+        <details>
           <summary class="custom-summary text-gray-800 px-2.5 modulo">
             <i class="ph-bold ph-greater-than arrow-icon"></i>
-            <span class="title">Módulo 2 - Desenvolvimento Front-end - De 15.04 a 05.05.2025</span><i class="ph-fill ph-lock-simple"></i>
+            <span class="title">Módulo 2 - Desenvolvimento Front-end - De 15.04 a 05.05.2025</span><i
+              class="ph-fill ph-lock-simple"></i>
           </summary>
         </details>
-          <details>
+        <details>
           <summary class="custom-summary text-gray-800 px-2.5 modulo">
             <i class="ph-bold ph-greater-than arrow-icon"></i>
             <span class="title">Módulo 3 - Back-end - De 06.05 a 01.06.2025</span><i class="ph-fill ph-lock-simple"></i>
           </summary>
         </details>
-          <details>
+        <details>
           <summary class="custom-summary text-gray-800 px-2.5 modulo">
             <i class="ph-bold ph-greater-than arrow-icon"></i>
-            <span class="title">Módulo 4 - Testes Automatizados - De 02.06 a 09.06.2025</span><i class="ph-fill ph-lock-simple"></i>
+            <span class="title">Módulo 4 - Testes Automatizados - De 02.06 a 09.06.2025</span><i
+              class="ph-fill ph-lock-simple"></i>
           </summary>
         </details>
-          <details>
+        <details>
           <summary class="custom-summary text-gray-800 px-2.5 modulo">
             <i class="ph-bold ph-greater-than arrow-icon"></i>
             <span class="title">Exercícios de HTML e CSS</span>
@@ -178,91 +208,91 @@
             <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
             <a class="topic-modulo" href="#">Final do Mini Projeto de JavaScript</a>
           </label>
-          </details>
-          <details>
-            <summary class="custom-summary text-gray-800 px-2.5 modulo">
-              <i class="ph-bold ph-greater-than arrow-icon"></i>
-              <span class="title">Exercícios de React</span>
-            </summary>
-            <label class="flex items-center gap-2 subtopic">
-              <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-              <a class="topic-modulo" href="#">Exercício de Fixação</a>
-            </label>
-            <label class="flex items-center gap-2 subtopic">
-              <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-              <a class="topic-modulo" href="#">Exercício de Fixação</a>
-            </label>
-            <label class="flex items-center gap-2 subtopic">
-              <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-              <a class="topic-modulo" href="#">Criando um Formulário de Feedback com useState</a>
-            </label>
-            <label class="flex items-center gap-2 subtopic">
-              <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-              <a class="topic-modulo" href="#">Atividade de Fixação: Rotas e Componentes em React</a>
-            </label>
-            <label class="flex items-center gap-2 subtopic">
-              <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-              <a class="topic-modulo" href="#">Atividade de Fixação: Estilização e Interatividade com CSS em React</a>
-            </label>
-            <label class="flex items-center gap-2 subtopic">
-              <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-              <a class="topic-modulo" href="#">Criando uma Mini Loja Virtual com PrimeReact e Axios</a>
-            </label>
-            </details>
-            <details>
-              <summary class="custom-summary text-gray-800 px-2.5 modulo">
-                <i class="ph-bold ph-greater-than arrow-icon"></i>
-                <span class="title">Exercícios de Back-end</span>
-              </summary>
-              <label class="flex items-center gap-2 subtopic">
-                <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-                <a class="topic-modulo" href="#">Introdução ao Node.js e Express</a>
-              </label>
-              <label class="flex items-center gap-2 subtopic">
-                <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-                <a class="topic-modulo" href="#">Criação de Rotas Simples</a>
-              </label>
-              <label class="flex items-center gap-2 subtopic">
-                <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-                <a class="topic-modulo" href="#">Atividade do Dia!</a>
-              </label>
-              <label class="flex items-center gap-2 subtopic">
-                <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-                <a class="topic-modulo" href="#">Atividade do Dia!</a>
-              </label>
-              <label class="flex items-center gap-2 subtopic">
-                <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-                <a class="topic-modulo" href="#">Atividade do Dia!</a>
-              </label>
-              <label class="flex items-center gap-2 subtopic">
-                <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-                <a class="topic-modulo" href="#">Atividade do Dia!</a>
-              </label>
-              <label class="flex items-center gap-2 subtopic">
-                <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-                <a class="topic-modulo" href="#">Atividade do Dia!</a>
-              </label>
-              <label class="flex items-center gap-2 subtopic">
-                <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-                <a class="topic-modulo" href="#">Atividade do Dia!</a>
-              </label>
-              <label class="flex items-center gap-2 subtopic">
-                <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-                <a class="topic-modulo" href="#">Atividade do Dia!</a>
-              </label>
-              <label class="flex items-center gap-2 subtopic">
-                <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-                <a class="topic-modulo" href="#">Atividade do Dia!</a>
-              </label>
-              <label class="flex items-center gap-2 subtopic">
-                <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-                <a class="topic-modulo" href="#">Atividade do Dia!</a>
-              </label>
-              <label class="flex items-center gap-2 subtopic">
-                <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
-                <a class="topic-modulo" href="#">Atividade do Dia!</a>
-              </label>
-              </details>
+        </details>
+        <details>
+          <summary class="custom-summary text-gray-800 px-2.5 modulo">
+            <i class="ph-bold ph-greater-than arrow-icon"></i>
+            <span class="title">Exercícios de React</span>
+          </summary>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Exercício de Fixação</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Exercício de Fixação</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Criando um Formulário de Feedback com useState</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Atividade de Fixação: Rotas e Componentes em React</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Atividade de Fixação: Estilização e Interatividade com CSS em React</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Criando uma Mini Loja Virtual com PrimeReact e Axios</a>
+          </label>
+        </details>
+        <details>
+          <summary class="custom-summary text-gray-800 px-2.5 modulo">
+            <i class="ph-bold ph-greater-than arrow-icon"></i>
+            <span class="title">Exercícios de Back-end</span>
+          </summary>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Introdução ao Node.js e Express</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Criação de Rotas Simples</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Atividade do Dia!</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Atividade do Dia!</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Atividade do Dia!</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Atividade do Dia!</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Atividade do Dia!</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Atividade do Dia!</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Atividade do Dia!</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Atividade do Dia!</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Atividade do Dia!</a>
+          </label>
+          <label class="flex items-center gap-2 subtopic">
+            <input type="radio" class="w-4 h-4 m-0 p-0 box-content invisible">
+            <a class="topic-modulo" href="#">Atividade do Dia!</a>
+          </label>
+        </details>
       </details>
 
       <details>
@@ -373,35 +403,94 @@
             <span class="title">GT11</span><i class="ph-fill ph-lock-simple"></i>
           </summary>
         </details>
+      </details>
+      <details>
+        <summary class="custom-summary text-gray-800 px-2.5">
+          <i class="ph-bold ph-greater-than arrow-icon"></i>
+          <span class="title-main">TURMA BEZERRA</span>
+        </summary>
+        <details>
+          <summary class="custom-summary text-gray-800 ml-5 modulo">
+            <i class="ph-bold ph-greater-than arrow-icon"></i>
+            <span class="title">GT01</span><i class="ph-fill ph-lock-simple"></i>
+          </summary>
         </details>
         <details>
-          <summary class="custom-summary text-gray-800 px-2.5">
+          <summary class="custom-summary text-gray-800 ml-5 modulo">
             <i class="ph-bold ph-greater-than arrow-icon"></i>
-            <span class="title-main">TURMA BEZERRA</span>
+            <span class="title">GT02</span><i class="ph-fill ph-lock-simple"></i>
           </summary>
-          <details>
-            <summary class="custom-summary text-gray-800 ml-5 modulo">
-              <i class="ph-bold ph-greater-than arrow-icon"></i>
-              <span class="title">GT01</span><i class="ph-fill ph-lock-simple"></i>
-            </summary>
-          </details>
-          <details>
-            <summary class="custom-summary text-gray-800 ml-5 modulo">
-              <i class="ph-bold ph-greater-than arrow-icon"></i>
-              <span class="title">GT02</span><i class="ph-fill ph-lock-simple"></i>
-            </summary>
-          </details>
-          <details>
-            <summary class="custom-summary text-gray-800 ml-5 modulo">
-              <i class="ph-bold ph-greater-than arrow-icon"></i>
-              <span class="title">GT03</span><i class="ph-fill ph-lock-simple"></i>
-            </summary>
-          </details>
         </details>
+        <details>
+          <summary class="custom-summary text-gray-800 ml-5 modulo">
+            <i class="ph-bold ph-greater-than arrow-icon"></i>
+            <span class="title">GT03</span><i class="ph-fill ph-lock-simple"></i>
+          </summary>
+        </details>
+      </details>
 
     </div>
 
   </aside>
+  <header class="bg-[#F2F3F7]">
+    <div class="max-w-5xl mx-auto px-6 py-6">
+      <div id="course-banner"
+        style="background-image: url('https://lms.iel-ce.org.br/pluginfile.php/17398/course/overviewfiles/turmaPresencial.jpeg'); background-position: center 10%;">
+        <div id="course-header-banner-text" class="h2 text-2xl font-bold text-center py-8">
+          Desenvolvedor Web Full Stack - Presencial - 2.0
+        </div>
+      </div>
+      <div class="flex items-center gap-2 mt-4">
+        <div class="text-yellow-500 flex">
+          <i class="ph-fill ph-star"></i>
+          <i class="ph-fill ph-star"></i>
+          <i class="ph-fill ph-star"></i>
+          <i class="ph-fill ph-star"></i>
+          <i class="ph-fill ph-star"></i>
+        </div>
+        <span class="text-orange-400 font-bold ml-2">5.0</span>
+        <span class="text-gray-600 ml-1">(3)</span>
+        <a href="#" class="text-blue-600 underline ml-4">Avaliar</a>
+      </div>
+    </div>
+  </header>
+  
+  <main class="bg-[#F2F3F7]">
+    <div class="bg-white rounded-xl p-6 shadow-md max-w-6xl mx-auto mt-10">
+
+      <nav class="border-b border-gray-300 mb-6">
+        <ul class="flex gap-6 text-sm font-semibold text-gray-700">
+          <li><a href="#">Boas vindas</a></li>
+          <li><a href="#">CONTEÚDO COMPLEMENTAR</a></li>
+          <li><a href="#">TURMA ALDEOTA</a></li>
+          <li><a href="#">TURMA SUL</a></li>
+          <li><a href="#">TURMA BEZERRA</a></li>
+        </ul>
+      </nav>
+      <h2 class="text-xl font-bold text-[#203969] mb-4 flex items-center gap-2">
+        <i class="ph ph-folder-simple text-lg"></i>
+        Boas-vindas
+      </h2>
+
+      <div class="texto"> É com muita alegria que damos início à sua jornada no <strong>Geração Tech 2.0,</strong> que
+        acontecerá de
+        <strong>01/04/2025 a
+          20/06/2025!</strong> Durante esse período, vocês terão acesso a um universo de aprendizado e oportunidades
+        incríveis no
+        mundo da tecnologia.
+        <br></br>
+
+        Para apoiar seus estudos, disponibilizamos aqui no <strong>Moodle,</strong> um material de estudos para vocês
+        complementarem seu
+        aprendizado no curso.
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Todos os direitos reservados</p>
+  </footer>
 
 </body>
 

@@ -1,0 +1,9 @@
+.iframe-sz-chat {
+    width: 320px;
+    height: 500px;
+    position: fixed;
+    border: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: block;
+}
