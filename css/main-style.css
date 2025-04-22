@@ -35,12 +35,16 @@ main {
 }
 
 .h2 {
-    font-size: 1.875rem;
+    font-size: 2rem;
     font-weight: bold;
     padding: 1.5em;
     background: rgba(255, 255, 255, .5);
     align-items: center;
     text-align: center;
+}
+
+.text-center {
+    text-align: left;
 }
 
 .estrela{
